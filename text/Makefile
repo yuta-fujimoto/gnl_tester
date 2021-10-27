@@ -19,6 +19,7 @@ all: gen.c
 	./a.out 20 4 > 4m
 	./a.out 20 3 > 3m
 
+
 clean:
 	rm 31o 32o 33o 33m 32m 31m 2000o 2001o 1999o 1999m 2000m 2001m 4o 3o 5o 4m 5m 3m
 
