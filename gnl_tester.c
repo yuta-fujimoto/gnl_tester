@@ -7,7 +7,7 @@ int	main(int ac, char **av)
 	int		fd;
 	char	*line;
 
-	(void *)ac;
+	(void)ac;
 	fd = open(av[1], O_RDONLY);
 	while ((line = get_next_line(fd)))
 	{

@@ -12,7 +12,11 @@ int	main(int ac, char **av)
 	char *rlt;
 
 	i = 1;
-	printf("intput file name like a b c\n");
+	if (ac == 1)
+	{
+		printf("usage: ./a.out file1 file2 ,,,");
+		return (0);
+	}
 	while (i < ac)
 	{
 		fd[i] = open(av[i], O_RDONLY);
