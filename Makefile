@@ -93,48 +93,48 @@ normal: $(SRCS)
 
 leaks4: $(SRCS)
 	$(CC) $(CFLAG) -D BUFFER_SIZE=4 $^
-	./a.out text/4o > tmp
-	./a.out text/5o > tmp
-	./a.out text/3o > tmp
-	./a.out text/4m > tmp
-	./a.out text/5m > tmp
-	./a.out text/3m > tmp
-	./a.out text/31o > tmp
-	./a.out text/32o > tmp
-	./a.out text/33o > tmp
-	./a.out text/31m > tmp
-	./a.out text/32m > tmp
-	./a.out text/33m > tmp
+	./a.out text/4o > /dev/null
+	./a.out text/5o > /dev/null
+	./a.out text/3o > /dev/null
+	./a.out text/4m > /dev/null
+	./a.out text/5m > /dev/null
+	./a.out text/3m > /dev/null
+	./a.out text/31o > /dev/null
+	./a.out text/32o > /dev/null
+	./a.out text/33o > /dev/null
+	./a.out text/31m > /dev/null
+	./a.out text/32m > /dev/null
+	./a.out text/33m > /dev/null
 
 leaks32: $(SRCS)
 	$(CC) $(CFLAG) -D BUFFER_SIZE=32 $^
-	./a.out text/4o > tmp
-	./a.out text/5o > tmp
-	./a.out text/3o > tmp
-	./a.out text/4m > tmp
-	./a.out text/5m > tmp
-	./a.out text/3m > tmp
-	./a.out text/31o > tmp
-	./a.out text/32o > tmp
-	./a.out text/33o > tmp
-	./a.out text/31m > tmp
-	./a.out text/32m > tmp
-	./a.out text/33m > tmp
+	./a.out text/4o > /dev/null
+	./a.out text/5o > /dev/null
+	./a.out text/3o > /dev/null
+	./a.out text/4m > /dev/null
+	./a.out text/5m > /dev/null
+	./a.out text/3m > /dev/null
+	./a.out text/31o > /dev/null
+	./a.out text/32o > /dev/null
+	./a.out text/33o > /dev/null
+	./a.out text/31m > /dev/null
+	./a.out text/32m > /dev/null
+	./a.out text/33m > /dev/null
 
 leaks256: $(SRCS)
 	$(CC) $(CFLAG) -D BUFFER_SIZE=256 $^
-	./a.out text/4o > tmp
-	./a.out text/5o > tmp
-	./a.out text/3o > tmp
-	./a.out text/4m > tmp
-	./a.out text/5m > tmp
-	./a.out text/3m > tmp
-	./a.out text/31o > tmp
-	./a.out text/32o > tmp
-	./a.out text/33o > tmp
-	./a.out text/31m > tmp
-	./a.out text/32m > tmp
-	./a.out text/33m > tmp
+	./a.out text/4o > /dev/null
+	./a.out text/5o > /dev/null
+	./a.out text/3o > /dev/null
+	./a.out text/4m > /dev/null
+	./a.out text/5m > /dev/null
+	./a.out text/3m > /dev/null
+	./a.out text/31o > /dev/null
+	./a.out text/32o > /dev/null
+	./a.out text/33o > /dev/null
+	./a.out text/31m > /dev/null
+	./a.out text/32m > /dev/null
+	./a.out text/33m > /dev/null
 
 se: $(SE)
 	$(CC) $(CFLAG) -D BUFFER_SIZE=256 $^

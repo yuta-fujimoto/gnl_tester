@@ -9,7 +9,7 @@ int	main(int ac, char **av)
 	int fd[MAX_FD];
 	int i;
 	int j;
-	char *tmp;
+	char *rlt;
 
 	i = 1;
 	printf("intput file name like a b c\n");
@@ -30,7 +30,9 @@ int	main(int ac, char **av)
 		scanf("%d", &j);
 		if (j <= 0 || j >= ac)
 			break;
-		printf("fd: %d\n content: %s\n\n", fd[j], get_next_line(fd[j]));
+		rlt = get_next_line(fd[j]);
+		printf("fd: %d\n content: %s\n\n", fd[j], rlt);
+		free(rlt);
 	}
 	i = 1;
 	while (i < ac)
