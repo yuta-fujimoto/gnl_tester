@@ -1,5 +1,5 @@
 # gnl_tester
-tester for 42 gnl project
+tester for 42 gnl project just for me
 
 1, make -C text
 
