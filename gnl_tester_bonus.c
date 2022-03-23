@@ -12,7 +12,7 @@ int	main(int ac, char **av)
 	char *rlt;
 
 	i = 1;
-	if (ac == 1)
+	if (ac != 2)
 	{
 		printf("usage: ./a.out file1 file2 ,,,");
 		return (0);

@@ -7,6 +7,7 @@ INCLUDE = -I../
 
 all: $(SRCS)
 	$(CC) $(CFLAG) $(INCLUDE) -D BUFFER_SIZE=256 $^
+	make -C text
 
 normal: $(SRCS)
 	$(CC) $(CFLAG) -D BUFFER_SIZE=256 $^
