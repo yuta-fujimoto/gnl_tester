@@ -1,11 +1,12 @@
-SRCS = get_next_line.c get_next_line_utils.c gnl_tester.c
-BONUS = get_next_line_bonus.c get_next_line_utils_bonus.c gnl_tester_bonus.c
-SE = get_next_line.c get_next_line_utils.c gnl_tester_error_stdin.c
+SRCS = ../get_next_line.c ../get_next_line_utils.c ./gnl_tester.c
+BONUS = ../get_next_line_bonus.c ../get_next_line_utils_bonus.c ./gnl_tester_bonus.c
+SE = ../get_next_line.c ../get_next_line_utils.c ../gnl_tester_error_stdin.c
 CFLAG = -Wall -Werror -Wextra
-CC = clang
+CC = gcc
+INCLUDE = -I../
 
 all: $(SRCS)
-	$(CC) $(CFLAG) -D BUFFER_SIZE=256 $^
+	$(CC) $(CFLAG) $(INCLUDE) -D BUFFER_SIZE=256 $^
 
 normal: $(SRCS)
 	$(CC) $(CFLAG) -D BUFFER_SIZE=256 $^
