@@ -1,6 +1,8 @@
 # gnl_tester
 tester for 42 gnl project just for me
 
+0, git clone [URL] [reviwee's repo]
+
 1, make -C text
 
 2, make 4, 32, 2000						(BUFFER SIZE)
