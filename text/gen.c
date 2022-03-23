@@ -24,7 +24,7 @@ int main(int argc, char **argv)
 		for (int j = 0; j < h; j++)
 		{
 			srand((unsigned)time(NULL) + j + i);
-			c = rand() % 127 + 1;
+			c = rand() % 94 + 32;
 			printf("%c", c);
 		}
 		printf("\n");
