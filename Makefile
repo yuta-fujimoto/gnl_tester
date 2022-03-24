@@ -1,6 +1,6 @@
 SRCS = ../get_next_line.c ../get_next_line_utils.c ./gnl_tester.c
 BONUS = ../get_next_line_bonus.c ../get_next_line_utils_bonus.c ./gnl_tester_bonus.c
-SE = ../get_next_line.c ../get_next_line_utils.c ../gnl_tester_error_stdin.c
+SE = ../get_next_line.c ../get_next_line_utils.c ./gnl_tester_error_stdin.c
 CFLAG = -Wall -Werror -Wextra
 CC = gcc
 INCLUDE = -I../
@@ -142,7 +142,8 @@ se: $(SE)
 	$(CC) $(CFLAG) -D BUFFER_SIZE=256 $^
 	./a.out
 
-fclean: ./a.out
+fclean: 
+	make fclean -C text
 	rm $^
 	rm 3o 4o 5o 31o 32o 33o 1999o 2000o 2001o 3m 4m 5m 31m 32m 33m 1999m 2000m 2001m e l leaks.log
 
