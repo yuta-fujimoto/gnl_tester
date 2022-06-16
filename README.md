@@ -1,14 +1,20 @@
 # gnl_tester
-tester for 42 gnl project just for me
+tester for 42 gnl project which make review smoother
 
-0, git clone [URL] [reviwee's repo]
+```
+git clone [URL] [reviwee's repo]
 
-1, make -C text
+# generate test files
+make -C text
 
-2, make 4, 32, 2000						(BUFFER SIZE)
+# test all combinations of buffer sizes and character lengths
+make normal
 
-3, make leaks4, leaks32, leaks2000		(LEAKS)
+# test stdin and invalid fd
+make se
 
-4, make se; a.out						(invalid fd + stdin)
+# test bonus(please check bonux1 and bonus2)
+make bonus; a.out bonus1 bonus2
+```
 
-5, make bonus; a.out bonus1 bonus2		(bonus)
+if you want to know the tests in detail, please read Makefile and *.c because they are really simple
