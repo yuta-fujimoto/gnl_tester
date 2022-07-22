@@ -1,5 +1,5 @@
 
-#include "get_next_line_bonus.h"
+#include "../get_next_line_bonus.h"
 #include <stdio.h>
 #include <fcntl.h>
 #define MAX_FD 256
@@ -12,7 +12,7 @@ int	main(int ac, char **av)
 	char *rlt;
 
 	i = 1;
-	if (ac != 2)
+	if (ac != 3)
 	{
 		printf("usage: ./a.out file1 file2 ,,,");
 		return (0);
